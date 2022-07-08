@@ -31,53 +31,103 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!--TITLE-->
     <section class="section-title">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="a0110-text-align-center a0110-title-adjs">
-                        Level 1
-                    </h1>
-                </div>
-            </div>
-            <div class="row mx-sm-5 mx-md-5 mx-lg-5 mx-xl-5">
-                <button id="a0110-open-help" class="btn btn-outline-dark a0110-close-button">help</button>
-            </div>
-            <div id="game-desc" class="row a0110-bg-light">
-                <div class="col-lg-12">
-                    <h3 class="a0110-text-align-center">
-                        How to Play?
-                    </h3>
-                    <p class="a0110-text-align-center text-secondary mx-sm-5">
-                        For each level, start by clicking one of the boxes. Depending on the level, game will flash random boxes in a random order. Repeat the pattern by clicking the boxes in correct order to complete the level.
-                    </p>
-                    <button id="a0110-close-help" class="btn btn-outline-dark a0110-close-button">
-                        close help
-                    </button>
-                </div>
-            </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="a0110-text-align-center a0110-title-adjs">
+              The Simon Game
+            </h1>
+          </div>
         </div>
+        <div id="game-desc" class="row a0110-color-bg-antiquewhite">
+          <div class="col-lg-12 a0110-text-align-center">
+            <h3 class="a0110-text-align-center">How to Play?</h3>
+            <p class="a0110-text-align-center text-secondary mx-sm-5">
+              For each level, start by clicking one of the boxes. Depending on
+              the level, game will flash random boxes in a random order. Repeat
+              the pattern by clicking the boxes in correct order to complete the
+              level.
+            </p>
+            <button
+              id="a0110-close-help"
+              class="btn btn-outline-dark a0110-close-button"
+            >
+              close help
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!--BOXES-->
     <section id="boxes">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 a0110-text-align-center">
-                    <i class="fa-solid fa-square fa-10x box-left"></i>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 a0110-text-align-center">
-                    <i class="fa-solid fa-square fa-10x box-right"></i>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 a0110-text-align-center">
-                    <i class="fa-solid fa-square fa-10x box-left"></i>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 a0110-text-align-center">
-                    <i class="fa-solid fa-square fa-10x box-right"></i>
-                </div>
-            </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div
+            class="col-sm-6 col-md-6 col-lg-6 col-xl-6 a0110-text-align-center"
+          >
+            <i id="box-1-id" class="fa-solid fa-square fa-10x box-left"></i>
+          </div>
+          <div
+            class="col-sm-6 col-md-6 col-lg-6 col-xl-6 a0110-text-align-center"
+          >
+            <i id="box-2-id" class="fa-solid fa-square fa-10x box-right"></i>
+          </div>
         </div>
+        <div class="row">
+          <div
+            class="col-sm-6 col-md-6 col-lg-6 col-xl-6 a0110-text-align-center"
+          >
+            <i id="box-3-id" class="fa-solid fa-square fa-10x box-left"></i>
+          </div>
+          <div
+            class="col-sm-6 col-md-6 col-lg-6 col-xl-6 a0110-text-align-center"
+          >
+            <i id="box-4-id" class="fa-solid fa-square fa-10x box-right"></i>
+          </div>
+        </div>
+
+        <div class="row a0110-color-white">
+          <div class="col-sm-12 a0110-text-align-center a0110-vertical-margin-1rem">
+            <button id="color-layout-button" class="btn btn-outline-light">
+              Color Layout
+            </button>
+          </div>
+        </div>
+        <div id="color-layout-panel" class="row a0110-row-horizontal-margin-adjs">
+          <div class="card a0110-color-bg-antiquewhite">
+            <div class="card-body">
+              <p
+                class="card-title a0110-text-align-center text-secondary mx-sm-5 a0110-standard-p-adjs"
+              >
+                Enter below a desired color palette from a colorhunt.co URL
+              </p>
+
+              <div class="input-group mb-3">
+                <input
+                  placeholder="https://colorhunt.co/palette/f9f2ed3ab0ffffb562f87474"
+                  type="text"
+                  class="form-control"
+                  id="colorhunt-url"
+                  aria-describedby="basic-addon3"
+                />
+              </div>
+              <button id="apply-new-color-button" class="btn btn-outline-dark">
+                Apply New Color Layout
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!--HELP BUTTON ROW-->
+        <div class="row mx-sm-5 mx-md-5 mx-lg-5 mx-xl-5 a0110-close-button-row">
+          <button id="a0110-open-help" class="btn btn-light a0110-close-button">
+            help
+          </button>
+        </div>
+      </div>
     </section>
 
     <!--jQUERY-->

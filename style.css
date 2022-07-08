@@ -1,5 +1,15 @@
 body {
-    background-color: antiquewhite;
+    background-color: rgb(33, 33, 33);
+}
+
+#game-desc {
+    padding: 1rem;
+    margin: auto 20%;
+    border-radius: 2rem;
+}
+
+#a0110-open-help {
+    margin: 3rem auto;
 }
 
 .a0110-text-align-center {
@@ -10,6 +20,7 @@ body {
     margin-top: 3rem;
     margin-bottom: 2rem;
     font-size: 5rem;
+    color: white;
 }
 
 .a0110-game-desc-adjs {
@@ -22,8 +33,12 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.a0110-bg-light {
-    background-color: rgb(250, 235, 215);
+.a0110-close-button-row {
+margin-top: 3rem;
+}
+
+.a0110-color-bg-antiquewhite {
+    background-color: antiquewhite;
 }
 
 .box-left {
@@ -32,4 +47,32 @@ body {
 
 .box-right {
     margin-right: 8rem;
+}
+
+.section-title {
+    margin-bottom: 5rem;
+}
+
+.a0110-vertical-margin {
+    margin: 3rem auto;
+}
+
+.a0110-standard-p-adjs {
+    margin: 1rem auto;
+}
+
+.a0110-color-white {
+    color: white;
+}
+
+.a0110-row-horizontal-margin-adjs {
+    margin: auto 10%;
+}
+
+.a0110-input-box-width {
+    width: 80%;
+}
+
+.a0110-vertical-margin-1rem {
+    margin: 1rem auto;
 }
