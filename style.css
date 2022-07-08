@@ -1,0 +1,35 @@
+body {
+    background-color: antiquewhite;
+}
+
+.a0110-text-align-center {
+    text-align: center;
+}
+
+.a0110-title-adjs {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 5rem;
+}
+
+.a0110-game-desc-adjs {
+    margin-top: 2rem;
+    max-width: 20rem;
+}
+
+.a0110-close-button {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.a0110-bg-light {
+    background-color: rgb(250, 235, 215);
+}
+
+.box-left {
+    margin-left: 8rem;
+}
+
+.box-right {
+    margin-right: 8rem;
+}
